@@ -9,7 +9,6 @@ const getWeather = async(city) => {
     const data = await response.json()
     return showWeather(data)
 }
-https://api.openweathermap.org/data/2.5/weather?&appid=3265874a2c77ae4a04bb96236a642d2f&units=metric
 const showWeather = (data) => {
     if (data.cod == "404") {
         weather.innerHTML = `<h2> City Not Found <h2>`
